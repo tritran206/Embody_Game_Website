@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Team Swole</title>
+
+  <style>
+      body{
+        padding: 0;
+        margin: 0;
+        overflow-y: scroll;
+        font-family: Calibri, sans-serif;
+        font-size: 18px;
+        box-sizing: border-box;
+      }
+
+      #nav{
+        background-color: #222;
+        height: 100
+        100px;
+      }
+
+      #nav_wrapper{
+        width: 960px;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+
+      }
+
+      #nav ul{
+        list-style-type: none;
+        padding: 0;
+        margin:0;
+        position: relative;
+      }
+
+      #nav ul li{
+        display: inline-block;
+        position: relative;
+        padding-bottom: 10px
+
+      }
+
+
+      /*.link:hover{
+        background-color: #333;
+      }*/
+
+      #nav ul li a,visited{
+        color: #ccc;
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+      }
+
+      #nav ul li a:hover{
+        color: #ccc;
+        text-decoration: none;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      a {
+        position: relative;
+        display: inline-block;
+        padding: .4em;
+        margin-right: 10px;
+        text-decoration: none;
+      }
+      a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+                transform: scaleX(0);
+        background-color: #730099;
+        -webkit-transition: all .5s ease;
+        transition: all .3s ease;
+      }
+      a:hover::after {
+        -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+        visibility: visible;
+      }
+
+  </style>
+
+</head>
+
+<body>
+  <div id="nav">
+      <div id="nav_wrapper">
+          <ul>
+              <li class="link"><a href="aboutEmbody.html">Embody The Game</a></li>
+              <li class="link"><a href="teamSwole.html">Team Swole</a></li>
+              <li id="logo"><a href="indexE.html"><img src="img/logo.png" alt="logo" height="90" width="auto"></a></li>
+              <li class="link"><a href="facts.html">Facts</a></li>
+              <li class="link"><a href="#">Join Newsletter</a></li>
+          </ul>
+      </div>
+  </div>
+
+  <div class="content">
+
+
+  </div>
+
+</body>
+
+</html>

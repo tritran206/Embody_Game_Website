@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Embody Game</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="css/nav.css" rel="stylesheet">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/embodyTheGame.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="main" class="m-scene">
+    <header>
+        <a id="logo" href="index.html"><img src="img/logo.png" alt="logo" height="120" width="auto"></a>
+    </header>
+    <nav>
+      <ul>
+        <li class="link"><a href="embodyTheGame.html">Embody Game</a></li>
+        <li class="link"><a href="team.html">Team Swole</a></li>
+        <li class="link"><a href="facts2.html">Facts</a></li>
+        <li class="link"><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <div class="handle"><span class="menu-toggle"></span>Menu</div>
+    </nav>
+
+    <div id="content" class="scene-element scene-element--fadeinright">
+
+      <h1 class="header text-muted">Embody Game</h1>
+
+      <hr class="featurette-divider">
+
+      <div class="video">
+        <video id="gameVideo" preload="auto" autoplay="true" loop="loop">
+          <source src="gamevideo.webm" type="video/webm">
+        </video>
+      </div>
+
+      <div>
+          <p class="lead">The idea of Embody was started by a group of 5 students attending the University of Washington Bothell. For what was once meant to be just a health application; Embody has become a tool for young males to better understand their body image in order correct negative body image or to prevent it. The Embody team found that there were great demands for resources that address an increasing important issue of negative body image especially in young men. Although negative image is a very serious issue, Embody was created into a fun game in order to address this topic that has forever been taboo for males to talk about. </p>
+          <p class="lead">Embody&#39;s design choices are based on research in order to successfully convey the theme across to player. Specific object were used as symbols to represent factors that affect an individual&#39;s body image. These objects are turned in to enemies in which the player must overcome.  The player must make correct actions in order to excel in the game and ultimately these choices can be related into the player&#39;s real life.</p>
+          <p class="lead">The goal of Embody is to help young males improve their negative body image before it leads to more serious health issues such as depression, obsessions with weight loss, eating disorders, and substance abuse. The Embody team hopes to come out with more resources for young men dealing with negative body image in the near future. <br/> <br/>
+          Check out our <span><a id="blog" href="http://swoledesign.weebly.com/">blog</a></span> </p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="mastfoot" text-align="center">
+        <div class="inner">
+          <p class="swole">Embody, by <img src="img/compLogo.png" height="30px" width="auto">.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <script src="js/prefixfree.min.js"></script>
+  <script src="js/jquery.smoothState.min.js"></script>
+  <script>
+    $('.handle').on('click', function(){
+        $('nav ul').toggleClass('showing');
+    });
+  </script>
+
+
+
+</body>
+
+</html>

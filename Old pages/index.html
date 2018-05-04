@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Embody</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="#">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <style type="text/css">
+
+        @font-face {
+          font-family: 'Aller';
+          src: url('/fonts/aller-webfont.eot?') format('eot'),
+          url('/fonts/aller-webfont.woff') format('woff'),
+          url('/fonts/aller-webfont.ttf') format('truetype'),
+          url('/fonts/aller-webfont.svg#webfontoBFDAVMh') format('svg');
+          font-weight: normal;
+          font-style: normal;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Calibri, sans-serif;
+        }
+
+        .background-wrap {
+            position: fixed;
+            z-index: -1000;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .bgvid {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-height: 100%;
+            min-width: 100%;
+            overflow-x: hidden;
+        }
+
+        .content {
+          position: fixed;
+          min-height: 100%;
+          min-width: 100%;
+          z-index: 1000;
+          background: rgba(0,0,0,0.5);
+        }
+
+        .content h1 {
+          text-align: center;
+          font-size: 65px;
+          text-transform: uppercase;
+          font-weight: 300;
+          color: #fff;
+          padding-top: 15%;
+          margin-bottom: 10px;
+        }
+
+        .content p {
+          text-align: center;
+          font-size: 20px;
+          letter-spacing: 3px;
+          color: #aaa;
+        }
+
+        .menu {
+          overflow-x: hidden;
+          position: relative;
+          left: 0;
+        }
+
+        .menu-open {
+          left: 231px;
+        }
+
+
+        .menu-open .menu-side {
+          left: 0;
+        }
+
+        .menu-side {
+          background-color: #333;
+          border-right: 1px solid #000;
+          color: #fff;
+          position: fixed;
+          top: 0;
+          left: -231px;
+          width: 210px;
+          height: 100%;
+          padding: 10px;
+          z-index: 1000;
+          font-family: 'Aller';
+          font-size: 20px;
+        }
+
+        .menu-side img {
+          margin-left: 17px;
+        }
+
+        .menu-side, .menu, .bgvid {
+          -webkit-transition: left 0.5s ease;
+          -moz-transition: left 0.5s ease;
+          transition: left 0.5s ease;
+        }
+
+        ul{
+          list-style: none;
+          margin-top: 35px;
+          margin-left: 20px;
+        }
+        li{
+          padding: 5px;
+        }
+        a{
+          text-decoration: none;
+          color: white;
+        }
+        a:hover{
+          color: purple;
+        }
+        .menu-toggle:before {
+          font-family: FontAwesome;
+          content: "\f0c9";
+          color: white;
+        }
+        /*menu-toggle {
+          font-family: FontAwesome;
+          content: "\f00d";
+        }*/
+        .menu-toggle{
+          text-decoration: none;
+          margin-top: 0;
+          right: -70px;
+          top: 0;
+          width: 70px;
+          height: 70px;
+          background-color: #333;
+          line-height: 70px;
+          text-decoration: none;
+          text-align: center;
+          border-bottom-right-radius: 5px;
+          border-bottom: 1px solid #000;
+          border-right: 1px solid #000;
+          box-shadow: 1px 0 3px rgba(0 0, 0, 0.1);
+        }
+      </style>
+  </head>
+  <body class="menu">
+
+
+    <nav class="menu-side">
+      <img src="img/logo.png" alt="logo" height="85" width="auto">
+  <ul>
+      <li><a href="aboutEmbody.html">Embody The Game</a></li>
+      <li><a href="teamSwole.html">Team Swole<a></li>
+      <li><a href="facts.html">Facts</a></li>
+      <li><a href="#">Join Newsletter</a></li>
+  </ul>
+    </nav>
+
+
+    <div class="background-wrap">
+      <img class="bgvid" src="img/hallway.jpg" alt="school hallway">
+      <!-- <video class="bgvid" preload="auto" autoplay="true" loop="loop" muted="muted">
+        <source src="gamevideo.webm" type="video/webm">
+        Video not supported
+      </video> -->
+    </div>
+
+
+    <div class="content">
+
+      <header>
+        <h2 class="menu-toggle"></h2>
+      </header>
+
+      <h1>Embody</h1>
+      <p>Embody is a endless runner game that brings understanding to young males about their body image. The focus of Embody is to create an experience that helps the targeted audience understand that male body image is diverse and that there is no ideal shape for males. </p>
+
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script>
+      (function() {
+        var body = $('body');
+        $('.menu-toggle').bind('click', function() {
+            body.toggleClass('menu-open');
+            return false;
+        });
+      })();
+      (function() {
+        var body = $('.bgvid');
+        $('.menu-toggle').bind('click', function() {
+            body.toggleClass('menu-open');
+            return false;
+        });
+      })();
+    </script>
+  </body>
+</html>

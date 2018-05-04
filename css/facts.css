@@ -1,0 +1,105 @@
+body{
+  padding: 0;
+  margin: 0;
+  overflow-y: scroll;
+  font-family: Calibri, sans-serif;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.featurette-divider {
+  margin: 50px 0;
+}
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+#content{
+  margin: 50px;
+  padding: 35px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgray;
+}
+
+.featurette-image {
+  width: 300px;
+  height: auto;
+}
+
+.swole{
+  text-align: center;
+}
+
+.header{
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.lead{
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+#gameVideo{
+  height: 500px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 35px;
+
+}
+.factBullets {
+  margin-left: 50px;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.m-scene .scene-element {
+  animation-duration: 0.75s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+&.is-exiting {
+     .scene_element {
+       animation-direction: alternate-reverse;
+     }
+ }
+.m-scene .scene-element--fadeinright {animation-name: fadeInRight};
+.m-scene.is-exiting .scene-element {animation-direction: alternate-reverse;}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ccc;
+}
+
+a:active {
+    text-decoration: none;
+}

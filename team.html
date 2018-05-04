@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+  <title>Team Swole</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="css/nav.css" rel="stylesheet">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/team.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="main" class="m-scene">
+    <header>
+        <a id="logo" href="index.html"><img src="img/logo.png" alt="logo" height="120" width="auto"></a>
+    </header>
+    <nav>
+      <ul>
+        <li class="link"><a href="embodyTheGame.html">Embody Game</a></li>
+        <li class="link"><a href="team.html">Team Swole</a></li>
+        <li class="link"><a href="facts2.html">Facts</a></li>
+        <li class="link"><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <div class="handle"><span class="menu-toggle"></span>Menu</div>
+    </nav>
+
+    <div id="content" class="scene-element scene-element--fadeinright">
+
+      <h1 class="header text-muted">Meet the Team</h1>
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Tri Tran <br> <span class="text-muted">UX Designer/Web Developer</span></h2>
+          <p class="lead">Born in Philipines in 1991 from Vietnamese refugee parents, Tri lived in 3 different countries before settling down in Decatur, Illinois where he spent the majority of his childhood. He later moved to Seattle, Washington where attended Mountlake Terrace Highschool. After highschool he attended the University of Washington Bothell where he found interest in designing games.</p>
+        </div>
+        <div class="col-md-5">
+
+          <div class="img-container">
+
+            <div class="front">
+              <img class="featurette-image img-responsive center-block" src="img/tri.jpg" alt="Tri image">
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Jacky Cheung <span class="text-muted">Developer</span></h2>
+          <p class="lead"></p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <div class="img-container">
+            <img class="featurette-image img-responsive center-block" src="img/jackie.jpg" alt="Jacky image">
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Reed Headrick <span class="text-muted">Researcher</span></h2>
+          <p class="lead">Born and raised in Marysville Washington, Reed is very familiar with the pacific northwest. He attended Marysville Pilchuck High school and soon after transferred to Marysville Getchell High school where he graduated. As a kid he took apart everything he could get his hands on and create something new out of it. His young adulthood he enrolled and graduated from the University of Washington Bothell where he took those childhood skills and expanded upon. To this day he inspires in reinventing the wheel.</p>
+        </div>
+        <div class="col-md-5">
+          <div class="img-container">
+            <img class="featurette-image img-responsive center-block" src="img/reed.jpg" alt="Reed image">
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Nick Gitahi <span class="text-muted">Artist</span></h2>
+          <p class="lead">Born in Nairobi, Kenya - where he developed a unique sense of appreciating artistry, Nicholas developed a passion for drawing. In 2005 he and his family relocated to the U.S in hopes for a better and prosperous life. After attended Bellevue College where he discovered his interest in using technology to design. He then attended University of Washington Bothell where he could expand his knowledge in art & design in areas like web design, game design, and User Interface Design.</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <div class="img-container">
+            <img class="featurette-image img-responsive center-block" src="img/nick.jpg" alt="Nick image">
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Thomas Le <span class="text-muted">Developer</span></h2>
+          <p class="lead">Born in Renton in 1994, Thomas has been a PNW native for all of his life. After living in Burien, Renton, and Kirkland, his family settled to live in Kenmore since 2001. After attending Inglemoor High School, he attended the University of Washington Bothell where he developed an interest in web design, game design, and virtual reality.</p>
+        </div>
+        <div class="col-md-5">
+          <div class="img-container">
+            <img class="featurette-image img-responsive center-block" src="img/thomas.jpg" alt="Thomas image">
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+
+
+      <div class="mastfoot" text-align="center">
+        <div class="inner">
+          <p class="swole">Embody, by <img src="img/compLogo.png" height="30px" width="auto">.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <script src="js/prefixfree.min.js"></script>
+  <script src="js/jquery.smoothState.min.js"></script>
+  <script>
+    $('.handle').on('click', function(){
+        $('nav ul').toggleClass('showing');
+    });
+  </script>
+
+
+</body>
+
+</html>

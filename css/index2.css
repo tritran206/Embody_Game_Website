@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+  background: url(hallway.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100%;
+  overflow-x: hidden;
+  position: relative;
+  left: 0;
+}
+
+.menu-open {
+  left:231px;
+}
+
+.menu-open .menu-side {
+  left:0;
+}
+
+.menu-side, .menu, body {
+  -webkit-transition: left 0.5s ease;
+  -moz-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+}
+
+.menu-side {
+  /*background-color: #333;
+  border-right: 1px solid #000;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: -231px;
+  width: 210px;
+  height: 100%;
+  padding: 10px;
+  z-index: 1000;
+  font-family: 'Aller';
+  font-size: 20px;*/
+  background-color: #222;
+  position: fixed;
+  border-right: 1px solid #000;
+  color:fff;
+  top: 0;
+  left: -231px;
+  width: 210px;
+  height: 100%;
+  padding: 10px;
+}
+.bgvid {
+  padding: 0;
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left:0;
+  margin: 0;
+}

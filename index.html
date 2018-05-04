@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Embody</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body class="menu">
+
+
+    <nav class="menu-side">
+      <img src="img/logo.png" alt="logo" height="85" width="auto">
+  <ul>
+      <li><a href="embodyTheGame.html">Embody Game</a></li>
+      <li><a href="team.html">Team Swole</a></li>
+      <li><a href="facts2.html">Facts</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+    </nav>
+
+
+    <div class="background-wrap">
+      <img class="bgvid" src="img/hallway.jpg" alt="school hallway">
+      <div id="Fade"></div>
+    </div>
+
+
+    <div class="content">
+
+      <header>
+        <h2 class="menu-toggle"></h2>
+      </header>
+      <div class="fadingText">
+        <!-- <div id="fact1"><span>Body image</span> is the subjective picture or mental image of one’s own body</div>
+        <div id="fact2">Some think that only women suffer from <span>negative body image</span>.</div>
+        <div id="fact3">More and more males report being concerned with and <span> at times consumed </span>with how they look.</div>
+        <div id="fact4">Negative body image can lead to other health issues such as low self-esteem, depression, and eating disorders.</div>
+        <div id="fact5">Recognize that bodies come in all different sizes and shapes.</div>
+        <div id="fact6">There is no one <span>right</span> body size</div> -->
+        <div id="fact7">Welcome To</div>
+
+        <!-- <ul class="purpleText">
+          <li>E</li>
+          <li>M</li>
+          <li>B</li>
+          <li>O</li>
+          <li>D</li>
+          <li>Y</li>
+        </ul>
+
+        <ul class="fly-in-text hidden">
+          <li>E</li>
+          <li>M</li>
+          <li>B</li>
+          <li>O</li>
+          <li>D</li>
+          <li>Y</li>
+        </ul>
+        <div id="description">Embody is a endless runner game that brings understanding to young males about their body image. The focus of Embody is to create an experience that helps the targeted audience understand that male body image is diverse and that there is no ideal shape for males. </div>
+      </div>
+    </div> -->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script>
+    $(function() {
+      setTimeout(function(){
+        $('.fly-in-text').removeClass('hidden');
+      }, 500);
+    })();
+    </script>
+    <script>
+    (function() {
+      var body = $('body');
+      $('.menu-toggle').bind('click', function() {
+          body.toggleClass('menu-open');
+          return false;
+      });
+    })();
+    (function() {
+      var body = $('.bgvid');
+      $('.menu-toggle').bind('click', function() {
+          body.toggleClass('menu-open');
+          return false;
+      });
+    })();
+
+    //   $(document).ready(function(){
+    //       $('.purpleText').delay(63000);
+    //       $('.purpleText').fadeIn(2000);
+    //       $('.fly-in-text').delay(63000)
+    //       $('.fly-in-text').fadeOut(2000)
+    //       $('#description').delay(3000);
+    //       $('#description').fadeIn(2000);
+    //       $('#description').delay(8000);
+    //       $('#description').fadeOut(2000);
+    //       $('#fact1').delay(15000);
+    //       $('#fact1').fadeIn(2000);
+    //       $('#fact1').delay(4000);
+    //       $('#fact1').fadeOut(2000);
+    //       $('#fact2').delay(23000);
+    //       $('#fact2').fadeIn(2000);
+    //       $('#fact2').delay(4000);
+    //       $('#fact2').fadeOut(2000);
+    //       $('#fact3').delay(31000);
+    //       $('#fact3').fadeIn(2000);
+    //       $('#fact3').delay(4000);
+    //       $('#fact3').fadeOut(2000);
+    //       $('#fact4').delay(39000);
+    //       $('#fact4').fadeIn(2000);
+    //       $('#fact4').delay(4000);
+    //       $('#fact4').fadeOut(2000);
+    //       $('#fact5').delay(47000);
+    //       $('#fact5').fadeIn(2000);
+    //       $('#fact5').delay(4000);
+    //       $('#fact5').fadeOut(2000);
+    //       $('#fact6').delay(55000);
+    //       $('#fact6').fadeIn(2000);
+    //       $('#fact6').delay(4000);
+    //       $('#fact6').fadeOut(2000);
+    //       $('#fact7').delay(63000);
+    //       $('#fact7').fadeIn(2000);
+    //       $('#fact7').delay(4000);
+    //   });
+    // </script>
+  </body>
+</html>
